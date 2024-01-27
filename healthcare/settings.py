@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'crispy_tailwind',
     'hospital.apps.HospitalConfig',
     'appointment.apps.AppointmentConfig',
-
+    'chatbot.apps.ChatbotConfig',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
