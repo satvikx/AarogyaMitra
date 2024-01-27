@@ -10,23 +10,23 @@ To run the app on your local machine, you need Python 3+, installed on your comp
 
 1.  Create virtual environment:
 ```bash
-virtualenv env_name
+virtualenv env
 ```
     
 2.  Activate virtual environment:
 ```bash
-On Linux - source virtualenv_name/bin/activate
-On Windows - virtualenv_name/Scripts/activate
+On Linux - source env/bin/activate
+On Windows - env/Scripts/activate
 ```
 
 3. Firstly you need to clone or download my project from github repositories:
 ```bash
-git clone https://github.com/hossainchisty/Health-Care-Django.git
+git clone https://github.com/satvikx/AarogyaMitra.git
 ```
 
 4. Then enter the corresponding directory:
 ```bash
-cd Health-Care-Django
+cd AarogyaMitra
 ```
 5. Install dependencies
 ```bash
@@ -53,6 +53,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'your email'
 EMAIL_HOST_PASSWORD = 'your email password'
 ```
-Thanks ❤ Happy Coding 🎉
-<br>
-Author: Hossain Chisty
