@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # from django.contrib import auth
 # from django.contrib.auth.models import User
@@ -8,19 +9,9 @@ from .models import Chat
 from django.utils import timezone
 from gradio_client import Client
 
+HF_TOKEN = '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'
 
 def ask_ai(message):
-    # response = openai.ChatCompletion.create(
-    #     model = "gpt-4",
-    #     messages=[
-    #         {"role": "system", "content": "You are an helpful assistant."},
-    #         {"role": "user", "content": message},
-    #     ]
-    # )
-    
-    # answer = response.choices[0].message.content.strip()
-    # return answer
-
     client = Client("https://givyboy-mental-health-chatbot.hf.space/--replicas/1hhl9/")
     result = client.predict(
             message,	# str  in 'Message' Textbox component
@@ -30,17 +21,22 @@ def ask_ai(message):
 
 
 # Create your views here.
+# @csrf_exempt
 def chatbot(request):
-    # chats = Chat.objects.filter(user=request.user)
+    chats = Chat.objects.all()
 
     if request.method == 'POST':
         message = request.POST.get('message')
+        print(message)
+        # response = "This is my response"
+        # print(response)
         response = ask_ai(message)
+
 
         chat = Chat(message=message, response=response, created_at=timezone.now())
         chat.save()
         return JsonResponse({'message': message, 'response': response})
-    return render(request, 'chatbot.html')
+    return render(request, 'chatbot.html', {'chats': chats})
 
 '''
 def login(request):
