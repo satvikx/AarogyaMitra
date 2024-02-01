@@ -1,6 +1,7 @@
-{% extends '_base.html' %}
+{% extends 'nav.html' %}
 {% load static %}
 {% block maincontent %}
+<br>
   <div class="col-md-5">
     <ol class="breadcrumb">
       <li><a class="text-primary" href="{% url 'hospital' %}">Home</a></li>
@@ -16,7 +17,7 @@
           <hr class="botm-line">
         </div>
         {% for doctor in object_list %}
-        <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="col-md-2 col-sm-2 col-xs-6">
           <div class="thumbnail">
             <img src="{{ doctor.picture.url }}" alt="{{ doctor.name }}" class="team-img">
             <div class="caption">

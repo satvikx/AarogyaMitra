@@ -147,9 +147,20 @@ banner
 	position: relative;
     object-position: 50% 50%;
 }
+#bannerr{
+	background: url('../img/bg-banner.jpg') no-repeat fixed;
+	background-size: cover;
+	min-height: 65px;
+	position: relative;
+    object-position: 50% 50%;
+}
 .bg-color{
-	background-color: RGBA(13, 70, 83, 0.78);
+	background-color: RGBA(13, 70, 83, 0.59);
 	min-height: 650px;
+}
+.bg-colorr{
+	background-color: RGBA(13, 70, 83, 1);
+	min-height: 90px;
 }
 .banner-info{
 	padding-top: 190px;
@@ -166,11 +177,19 @@ banner
 	text-transform: uppercase;
 	padding-bottom:15px;
 }
-.btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
+.btn-appoint{
 	margin-top: 30px;
 	padding: 10px 20px;
-	font-size: 12px;
+	font-size: 16px;
 	background-color: rgba(12, 184, 182, 0.91);
+	border-radius: 3px;
+	color: #fff;
+}
+.btn-appoint:hover, .btn-appoint:focus{
+	margin-top: 30px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: rgba(10, 139, 137, 0.91);
 	border-radius: 3px;
 	color: #fff;
 }

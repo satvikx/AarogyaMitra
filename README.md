@@ -1,8 +1,11 @@
-### Health Care🏥
+### AarogyaMitra💖
 
-HealthCare is a diagonostic management project developed in django. Admin can add doctor, User can see doctors profile and also they can make appointment. 
+AarogyaMitra is platform that connects you with trained and compassionate chatbots that can provide you with emotional support, guidance, and resources.
+ 
+ArogyaMitra is a diagonostic management project developed in django. Admin can add doctor, User can see doctors profile and also they can make appointment. 
 They can also contact to the HealthCare through email.
 
+![Screenshot](AM-image.png)
 
 ### Setup, Installation and Run
 
@@ -32,13 +35,16 @@ cd AarogyaMitra
 ```bash
   pip install -r requirements.txt
 ``` 
-
-6. Run local server, and DONE!
+6. Create a .env file in the base directory ArogyaMitra/..(here)
+```bash
+  SECRET_KEY=YOUR_SECRET_KEY
+``` 
+7. Run local server, and DONE!
 ```python
   python manage.py runserver
 ```
 
-7.Then go to ```http://127.0.0.1:8000``` in your browser.
+8. Then go to ```http://127.0.0.1:8000``` in your browser.
 
 ### To create superuser open terminal and type:
 ```
@@ -53,3 +59,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'your email'
 EMAIL_HOST_PASSWORD = 'your email password'
 ```
+
+With 💖 by
+Satvik Shrivastava

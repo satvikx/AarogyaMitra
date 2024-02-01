@@ -31,6 +31,7 @@ def chatbot(request):
         # response = "This is my response"
         # print(response)
         response = ask_ai(message)
+        # response = response.replace('\n','<br />\n')
 
 
         chat = Chat(message=message, response=response, created_at=timezone.now())
