@@ -12,7 +12,7 @@ from gradio_client import Client
 HF_TOKEN = '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'
 
 def ask_ai(message):
-    client = Client("https://givyboy-mental-health-chatbot.hf.space/--replicas/1hhl9/")
+    client = Client("https://givyboy-mental-health-chatbot.hf.space/--replicas/04p3w/")
     result = client.predict(
             message,	# str  in 'Message' Textbox component
             api_name="/chat"
