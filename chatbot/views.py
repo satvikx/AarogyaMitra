@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
+# from django.views.decorators.csrf import csrf_exempt
+from decouple import config
 
 # from django.contrib import auth
 # from django.contrib.auth.models import User
@@ -9,7 +10,7 @@ from .models import Chat
 from django.utils import timezone
 from gradio_client import Client
 
-HF_TOKEN = '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'
+# HF_TOKEN = config('SECRET_KEY')
 
 def ask_ai(message):
     client = Client("https://givyboy-mental-health-chatbot.hf.space/--replicas/04p3w/")
