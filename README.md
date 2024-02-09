@@ -1,6 +1,8 @@
 ### AarogyaMitra💖
 
 AarogyaMitra is platform that connects you with trained and compassionate chatbots that can provide you with emotional support, guidance, and resources.
+
+See it in action - https://aarogyamitra.pythonanywhere.com/
  
 ArogyaMitra is a diagonostic management project developed in django. Admin can add doctor, User can see doctors profile and also they can make appointment. 
 They can also contact to the HealthCare through email.
@@ -18,7 +20,7 @@ virtualenv env
     
 2.  Activate virtual environment:
 ```bash
-On Linux - source env/bin/activate
+On Linux or Git Bash - source env/bin/activate
 On Windows - env/Scripts/activate
 ```
 
@@ -50,7 +52,7 @@ cd AarogyaMitra
 ```
 python manage.py createsuperuser
 ```
-### For email sending functionality fill up the information in Your Project setting
+### For email sending functionality fill up the information in Your Project setting (optional)
 ```
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
